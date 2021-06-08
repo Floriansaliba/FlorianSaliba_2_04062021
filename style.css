@@ -1,0 +1,113 @@
+/* Déclaration de la police*/
+@font-face {
+    font-family: "Raleway";
+    src: url("/polices/Raleway/Raleway-VariableFont_wght.ttf") format('truetype'),
+    url("/polices/Raleway/Raleway-Italic-VariableFont_wght.ttf") format('truetype');
+    font-style: normal;
+    font-weight: normal;
+}
+
+body{
+    padding: 0px;
+    margin: 0px;
+}
+
+header{
+    width:100%;
+    margin: 0px;
+    padding: 0px;
+}
+
+#logo{
+    float: left;
+    width:100px;
+    height: 50px;
+    padding-left: 10px;
+}
+
+#inscription{
+    color: #0065FC;
+    font-family: "Raleway";
+    font-weight: bold;
+    padding-right: 10px;
+}
+
+#barrenavigation{
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    flex-wrap: wrap-reverse;
+    align-items: center;
+}
+
+
+ul{
+    display: flex;
+    flex-direction: row;
+    list-style-type: none;
+    width: 100%;
+}
+
+li{
+    border-bottom: solid;
+    border-color: #F2F2F2;
+}
+
+.actif{
+    border-color: blue;
+}
+
+.actif a{
+    color:#0065FC;
+}
+
+.navigation{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    height: 50px;
+    font-family: "Raleway";
+    text-decoration: none;
+    padding-right: 10px;
+    padding-left: 10px;
+}
+
+
+
+h1{
+    font-size: 20px;
+    font-family: "Raleway";
+    color:black;
+    padding-left: 10px;
+    padding-right: 30px;
+}
+
+.paragraphe{
+    font-family: "Raleway";
+    font-weight:normal;
+    font-size: 10px;
+    padding-left: 10px;
+}
+
+.soustitre{
+    font-family: "Raleway";
+    font-size: 15px;
+    padding-left: 10px;
+}
+
+.filtre{
+    display: flex;
+    flex-direction: row;
+    border: solid;
+    border-color:#F2F2F2;
+    border-radius:50px;
+}
+
+.logosvg{
+    height: 20px;
+}
+
+.cercle{
+    background-color:#DEEBFF ;
+    height: 100%;
+}
