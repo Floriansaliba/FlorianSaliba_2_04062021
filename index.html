@@ -6,14 +6,17 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
     <title>Reservia</title>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Raleway&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/5f4340e36e.js" crossorigin="anonymous"></script>
 </head>
 <body>
     <header>
         <img id="logo" src="images/logo/Reservia@3x.png" alt="Logo Réservia">
         <nav id="barrenavigation">
             <ul>
-                <li class="actif"><a class="navigation" href="#">Hébergements</a></li>
-                <li><a class="navigation" href="#">Activités</a></li>
+                <li class="actif"><a class="navigation" href="#hebergements">Hébergements</a></li>
+                <li><a class="navigation" href="#activites">Activités</a></li>
             </ul>
             <p id="inscription">S'inscrire</p>
         </nav>
@@ -23,20 +26,21 @@
         <p class ="paragraphe">En plein centre ville ou en pleine nature</p>
         <div id="barrerecherche">
             <div id="barrerecherche__partiegrise">
-                <img class="logosvg" src="SVG/map-marker-alt-solid.svg" alt="Logo localisation">
+                <i class="fas fa-map-marker-alt"></i>
             </div>
             <form action="">
                 <input type="text" value="Marseille, France">
             </form>
             <div id="barrerecherche__partiebleue">
-                <img class="logosvg" src="SVG/search-solid.svg" alt="">
+                <i class="fas fa-search"></i>
+                <p id="search">Rechercher</p>
             </div>
         </div>
         <h2 class="soustitre">Filtres</h2>
         <div class="filtre">
             <div class="contenantfiltre">
                 <div class="cercle">
-                    <svg class="logosvg" aria-hidden="true" focusable="false" data-prefix="fas" data-icon="money-bill-wave" class="svg-inline--fa fa-money-bill-wave fa-w-20" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 512"><path class="logosvg" fill="currentColor" d="M621.16 54.46C582.37 38.19 543.55 32 504.75 32c-123.17-.01-246.33 62.34-369.5 62.34-30.89 0-61.76-3.92-92.65-13.72-3.47-1.1-6.95-1.62-10.35-1.62C15.04 79 0 92.32 0 110.81v317.26c0 12.63 7.23 24.6 18.84 29.46C57.63 473.81 96.45 480 135.25 480c123.17 0 246.34-62.35 369.51-62.35 30.89 0 61.76 3.92 92.65 13.72 3.47 1.1 6.95 1.62 10.35 1.62 17.21 0 32.25-13.32 32.25-31.81V83.93c-.01-12.64-7.24-24.6-18.85-29.47zM48 132.22c20.12 5.04 41.12 7.57 62.72 8.93C104.84 170.54 79 192.69 48 192.69v-60.47zm0 285v-47.78c34.37 0 62.18 27.27 63.71 61.4-22.53-1.81-43.59-6.31-63.71-13.62zM320 352c-44.19 0-80-42.99-80-96 0-53.02 35.82-96 80-96s80 42.98 80 96c0 53.03-35.83 96-80 96zm272 27.78c-17.52-4.39-35.71-6.85-54.32-8.44 5.87-26.08 27.5-45.88 54.32-49.28v57.72zm0-236.11c-30.89-3.91-54.86-29.7-55.81-61.55 19.54 2.17 38.09 6.23 55.81 12.66v48.89z"></path></svg>
+                    <i class="fas fa-money-bill-wave"></i>
                 </div>
                 <p class="soustitre__filtre">Economique</p>
             </div>
@@ -44,7 +48,7 @@
         <div class="filtre">
             <div class="contenantfiltre">
                 <div class = "cercle">
-                    <svg class="logosvg" aria-hidden="true" focusable="false" data-prefix="fas" data-icon="child" class="svg-inline--fa fa-child fa-w-12" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 384 512"><path class="logosvg" fill="currentColor" d="M120 72c0-39.765 32.235-72 72-72s72 32.235 72 72c0 39.764-32.235 72-72 72s-72-32.236-72-72zm254.627 1.373c-12.496-12.497-32.758-12.497-45.254 0L242.745 160H141.254L54.627 73.373c-12.496-12.497-32.758-12.497-45.254 0-12.497 12.497-12.497 32.758 0 45.255L104 213.254V480c0 17.673 14.327 32 32 32h16c17.673 0 32-14.327 32-32V368h16v112c0 17.673 14.327 32 32 32h16c17.673 0 32-14.327 32-32V213.254l94.627-94.627c12.497-12.497 12.497-32.757 0-45.254z"></path></svg>
+                    <i class="fas fa-child"></i>
                 </div>
                 <p class="soustitre__filtre">Familial</p>
             </div>
@@ -52,7 +56,7 @@
         <div class="filtre">
             <div class="contenantfiltre">
                 <div class = "cercle">
-                    <svg class="logosvg" aria-hidden="true" focusable="false" data-prefix="fas" data-icon="heart" class="svg-inline--fa fa-heart fa-w-16" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path class="logosvg" fill="currentColor" d="M462.3 62.6C407.5 15.9 326 24.3 275.7 76.2L256 96.5l-19.7-20.3C186.1 24.3 104.5 15.9 49.7 62.6c-62.8 53.6-66.1 149.8-9.9 207.9l193.5 199.8c12.5 12.9 32.8 12.9 45.3 0l193.5-199.8c56.3-58.1 53-154.3-9.8-207.9z"></path></svg>
+                    <i class="fas fa-heart"></i>
                 </div>
                 <p class="soustitre__filtre">Romantique</p>
             </div>
@@ -60,139 +64,256 @@
         <div class="filtre">
             <div class="contenantfiltre">
                 <div class = "cercle">
-                    <svg class="logosvg" aria-hidden="true" focusable="false" data-prefix="fas" data-icon="dog" class="svg-inline--fa fa-dog fa-w-18" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512"><path class="logosvg" fill="currentColor" d="M298.06,224,448,277.55V496a16,16,0,0,1-16,16H368a16,16,0,0,1-16-16V384H192V496a16,16,0,0,1-16,16H112a16,16,0,0,1-16-16V282.09C58.84,268.84,32,233.66,32,192a32,32,0,0,1,64,0,32.06,32.06,0,0,0,32,32ZM544,112v32a64,64,0,0,1-64,64H448v35.58L320,197.87V48c0-14.25,17.22-21.39,27.31-11.31L374.59,64h53.63c10.91,0,23.75,7.92,28.62,17.69L464,96h64A16,16,0,0,1,544,112Zm-112,0a16,16,0,1,0-16,16A16,16,0,0,0,432,112Z"></path></svg>
+                        <i class="fas fa-dog"></i>
                 </div>
                 <p class="soustitre__filtre">Animaux autorisés</p>
             </div>
         </div>
-        <p class="paragraphe">Plus de 500 logements sont disponibles dans cette ville</p>
+        <div id="info">
+            <div id="logoinfo">
+                <i class="fas fa-info"></i>
+            </div>
+            <p class="paragraphe">Plus de 500 logements sont disponibles dans cette ville</p>
+        </div>
     </section>
-    <section id="hebergements">
-        <h1>Hébergements à Marseille</h1>
-        <div class="hebergement">
-            <a class="hebergement__lien" href="#">
-                <img class="hebergement__image" src="images/hebergements/4_small/marcus-loke-WQJvWU_HZFo-unsplash.jpg" alt="Auberge la Cannebière">
-                <div class="hebergement__desciptif">
-                    <h2 class="hebergement__titre">Auberge la Cannebière</h2>
-                    <p class="hebergement__nuit">Nuit à partir de <span class="hebergement__prix">25€</span></p>
-                    <div class="hebergement__etoiles">
-                        <svg class="svg__etoile" aria-hidden="true" focusable="false" data-prefix="fas" data-icon="star" class="svg-inline--fa fa-star fa-w-18" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512"><path class="etoilepleine" fill="currentColor" d="M259.3 17.8L194 150.2 47.9 171.5c-26.2 3.8-36.7 36.1-17.7 54.6l105.7 103-25 145.5c-4.5 26.3 23.2 46 46.4 33.7L288 439.6l130.7 68.7c23.2 12.2 50.9-7.4 46.4-33.7l-25-145.5 105.7-103c19-18.5 8.5-50.8-17.7-54.6L382 150.2 316.7 17.8c-11.7-23.6-45.6-23.9-57.4 0z"></path></svg>
-                        <svg class="svg__etoile" aria-hidden="true" focusable="false" data-prefix="fas" data-icon="star" class="svg-inline--fa fa-star fa-w-18" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512"><path class="etoilepleine" fill="currentColor" d="M259.3 17.8L194 150.2 47.9 171.5c-26.2 3.8-36.7 36.1-17.7 54.6l105.7 103-25 145.5c-4.5 26.3 23.2 46 46.4 33.7L288 439.6l130.7 68.7c23.2 12.2 50.9-7.4 46.4-33.7l-25-145.5 105.7-103c19-18.5 8.5-50.8-17.7-54.6L382 150.2 316.7 17.8c-11.7-23.6-45.6-23.9-57.4 0z"></path></svg>
-                        <svg class="svg__etoile" aria-hidden="true" focusable="false" data-prefix="fas" data-icon="star" class="svg-inline--fa fa-star fa-w-18" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512"><path class="etoilepleine" fill="currentColor" d="M259.3 17.8L194 150.2 47.9 171.5c-26.2 3.8-36.7 36.1-17.7 54.6l105.7 103-25 145.5c-4.5 26.3 23.2 46 46.4 33.7L288 439.6l130.7 68.7c23.2 12.2 50.9-7.4 46.4-33.7l-25-145.5 105.7-103c19-18.5 8.5-50.8-17.7-54.6L382 150.2 316.7 17.8c-11.7-23.6-45.6-23.9-57.4 0z"></path></svg>
-                        <svg class="svg__etoile" aria-hidden="true" focusable="false" data-prefix="fas" data-icon="star" class="svg-inline--fa fa-star fa-w-18" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512"><path class="etoilepleine" fill="currentColor" d="M259.3 17.8L194 150.2 47.9 171.5c-26.2 3.8-36.7 36.1-17.7 54.6l105.7 103-25 145.5c-4.5 26.3 23.2 46 46.4 33.7L288 439.6l130.7 68.7c23.2 12.2 50.9-7.4 46.4-33.7l-25-145.5 105.7-103c19-18.5 8.5-50.8-17.7-54.6L382 150.2 316.7 17.8c-11.7-23.6-45.6-23.9-57.4 0z"></path></svg>
-                        <svg class="svg__etoile" aria-hidden="true" focusable="false" data-prefix="fas" data-icon="star" class="svg-inline--fa fa-star fa-w-18" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512"><path class="etoilepleine" fill="currentColor" d="M259.3 17.8L194 150.2 47.9 171.5c-26.2 3.8-36.7 36.1-17.7 54.6l105.7 103-25 145.5c-4.5 26.3 23.2 46 46.4 33.7L288 439.6l130.7 68.7c23.2 12.2 50.9-7.4 46.4-33.7l-25-145.5 105.7-103c19-18.5 8.5-50.8-17.7-54.6L382 150.2 316.7 17.8c-11.7-23.6-45.6-23.9-57.4 0z"></path></svg>
+    <div id="populaire_hebergements_global">
+        <section id="hebergements">
+            <h1>Hébergements à Marseille</h1>
+            <div class="hebergement__global">
+            <div class="hebergement">
+                <a class="hebergement__lien" href="">
+                    <div class="hebergement__image"></div>
+                    <div class="hebergement__desciptif">
+                        <h2 class="hebergement__titre">Auberge la Cannebière</h2>
+                        <p class="hebergement__nuit">Nuit à partir de <span class="hebergement__prix">25€</span></p>
+                        <div class="hebergement__etoiles">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="far fa-star"></i>
+                        </div>
                     </div>
-                </div>
-            </a>
-        </div>
-        <div class="hebergement">
-            <a class="hebergement__lien" href="#">
-                <img class="hebergement__image" src="images/hebergements/4_small/fred-kleber-gTbaxaVLvsg-unsplash.jpg" alt="Hotel du port">
-                <div class="hebergement__desciptif">
-                    <h2 class="hebergement__titre">Auberge la Cannebière</h2>
-                    <p class="hebergement__nuit">Nuit à partir de <span class="hebergement__prix">25€</span></p>
-                    <div class="hebergement__etoiles">
-                        <svg class="svg__etoile" aria-hidden="true" focusable="false" data-prefix="fas" data-icon="star" class="svg-inline--fa fa-star fa-w-18" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512"><path class="etoilepleine" fill="currentColor" d="M259.3 17.8L194 150.2 47.9 171.5c-26.2 3.8-36.7 36.1-17.7 54.6l105.7 103-25 145.5c-4.5 26.3 23.2 46 46.4 33.7L288 439.6l130.7 68.7c23.2 12.2 50.9-7.4 46.4-33.7l-25-145.5 105.7-103c19-18.5 8.5-50.8-17.7-54.6L382 150.2 316.7 17.8c-11.7-23.6-45.6-23.9-57.4 0z"></path></svg>
-                        <svg class="svg__etoile" aria-hidden="true" focusable="false" data-prefix="fas" data-icon="star" class="svg-inline--fa fa-star fa-w-18" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512"><path class="etoilepleine" fill="currentColor" d="M259.3 17.8L194 150.2 47.9 171.5c-26.2 3.8-36.7 36.1-17.7 54.6l105.7 103-25 145.5c-4.5 26.3 23.2 46 46.4 33.7L288 439.6l130.7 68.7c23.2 12.2 50.9-7.4 46.4-33.7l-25-145.5 105.7-103c19-18.5 8.5-50.8-17.7-54.6L382 150.2 316.7 17.8c-11.7-23.6-45.6-23.9-57.4 0z"></path></svg>
-                        <svg class="svg__etoile" aria-hidden="true" focusable="false" data-prefix="fas" data-icon="star" class="svg-inline--fa fa-star fa-w-18" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512"><path class="etoilepleine" fill="currentColor" d="M259.3 17.8L194 150.2 47.9 171.5c-26.2 3.8-36.7 36.1-17.7 54.6l105.7 103-25 145.5c-4.5 26.3 23.2 46 46.4 33.7L288 439.6l130.7 68.7c23.2 12.2 50.9-7.4 46.4-33.7l-25-145.5 105.7-103c19-18.5 8.5-50.8-17.7-54.6L382 150.2 316.7 17.8c-11.7-23.6-45.6-23.9-57.4 0z"></path></svg>
-                        <svg class="svg__etoile" aria-hidden="true" focusable="false" data-prefix="fas" data-icon="star" class="svg-inline--fa fa-star fa-w-18" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512"><path class="etoilepleine" fill="currentColor" d="M259.3 17.8L194 150.2 47.9 171.5c-26.2 3.8-36.7 36.1-17.7 54.6l105.7 103-25 145.5c-4.5 26.3 23.2 46 46.4 33.7L288 439.6l130.7 68.7c23.2 12.2 50.9-7.4 46.4-33.7l-25-145.5 105.7-103c19-18.5 8.5-50.8-17.7-54.6L382 150.2 316.7 17.8c-11.7-23.6-45.6-23.9-57.4 0z"></path></svg>
-                        <svg class="svg__etoile" aria-hidden="true" focusable="false" data-prefix="fas" data-icon="star" class="svg-inline--fa fa-star fa-w-18" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512"><path class="etoilepleine" fill="currentColor" d="M259.3 17.8L194 150.2 47.9 171.5c-26.2 3.8-36.7 36.1-17.7 54.6l105.7 103-25 145.5c-4.5 26.3 23.2 46 46.4 33.7L288 439.6l130.7 68.7c23.2 12.2 50.9-7.4 46.4-33.7l-25-145.5 105.7-103c19-18.5 8.5-50.8-17.7-54.6L382 150.2 316.7 17.8c-11.7-23.6-45.6-23.9-57.4 0z"></path></svg>
+                </a>
+            </div>
+            <div class="hebergement">
+                <a class="hebergement__lien" href="">
+                    <img class="hebergement__image" src="images/hebergements/4_small/fred-kleber-gTbaxaVLvsg-unsplash.jpg" alt="Hotel du port">
+                    <div class="hebergement__desciptif">
+                        <h2 class="hebergement__titre">Hôtel du port</h2>
+                        <p class="hebergement__nuit">Nuit à partir de 52<span class="hebergement__prix">€</span></p>
+                        <div class="hebergement__etoiles">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                        </div>
                     </div>
-                </div>
-            </a>
-        </div>
-        <div class="hebergement">
-            <a class="hebergement__lien" href="#">
-                <img class="hebergement__image" src="images/hebergements/4_small/reisetopia-B8WIgxA_PFU-unsplash.jpg" alt="Hotel des mouettes">
-                <div class="hebergement__desciptif">
-                    <h2 class="hebergement__titre">Auberge la Cannebière</h2>
-                    <p class="hebergement__nuit">Nuit à partir de <span class="hebergement__prix">25€</span></p>
-                    <div class="hebergement__etoiles">
-                        <svg class="svg__etoile" aria-hidden="true" focusable="false" data-prefix="fas" data-icon="star" class="svg-inline--fa fa-star fa-w-18" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512"><path class="etoilepleine" fill="currentColor" d="M259.3 17.8L194 150.2 47.9 171.5c-26.2 3.8-36.7 36.1-17.7 54.6l105.7 103-25 145.5c-4.5 26.3 23.2 46 46.4 33.7L288 439.6l130.7 68.7c23.2 12.2 50.9-7.4 46.4-33.7l-25-145.5 105.7-103c19-18.5 8.5-50.8-17.7-54.6L382 150.2 316.7 17.8c-11.7-23.6-45.6-23.9-57.4 0z"></path></svg>
-                        <svg class="svg__etoile" aria-hidden="true" focusable="false" data-prefix="fas" data-icon="star" class="svg-inline--fa fa-star fa-w-18" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512"><path class="etoilepleine" fill="currentColor" d="M259.3 17.8L194 150.2 47.9 171.5c-26.2 3.8-36.7 36.1-17.7 54.6l105.7 103-25 145.5c-4.5 26.3 23.2 46 46.4 33.7L288 439.6l130.7 68.7c23.2 12.2 50.9-7.4 46.4-33.7l-25-145.5 105.7-103c19-18.5 8.5-50.8-17.7-54.6L382 150.2 316.7 17.8c-11.7-23.6-45.6-23.9-57.4 0z"></path></svg>
-                        <svg class="svg__etoile" aria-hidden="true" focusable="false" data-prefix="fas" data-icon="star" class="svg-inline--fa fa-star fa-w-18" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512"><path class="etoilepleine" fill="currentColor" d="M259.3 17.8L194 150.2 47.9 171.5c-26.2 3.8-36.7 36.1-17.7 54.6l105.7 103-25 145.5c-4.5 26.3 23.2 46 46.4 33.7L288 439.6l130.7 68.7c23.2 12.2 50.9-7.4 46.4-33.7l-25-145.5 105.7-103c19-18.5 8.5-50.8-17.7-54.6L382 150.2 316.7 17.8c-11.7-23.6-45.6-23.9-57.4 0z"></path></svg>
-                        <svg class="svg__etoile" aria-hidden="true" focusable="false" data-prefix="fas" data-icon="star" class="svg-inline--fa fa-star fa-w-18" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512"><path class="etoilepleine" fill="currentColor" d="M259.3 17.8L194 150.2 47.9 171.5c-26.2 3.8-36.7 36.1-17.7 54.6l105.7 103-25 145.5c-4.5 26.3 23.2 46 46.4 33.7L288 439.6l130.7 68.7c23.2 12.2 50.9-7.4 46.4-33.7l-25-145.5 105.7-103c19-18.5 8.5-50.8-17.7-54.6L382 150.2 316.7 17.8c-11.7-23.6-45.6-23.9-57.4 0z"></path></svg>
-                        <svg class="svg__etoile" aria-hidden="true" focusable="false" data-prefix="fas" data-icon="star" class="svg-inline--fa fa-star fa-w-18" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512"><path class="etoilepleine" fill="currentColor" d="M259.3 17.8L194 150.2 47.9 171.5c-26.2 3.8-36.7 36.1-17.7 54.6l105.7 103-25 145.5c-4.5 26.3 23.2 46 46.4 33.7L288 439.6l130.7 68.7c23.2 12.2 50.9-7.4 46.4-33.7l-25-145.5 105.7-103c19-18.5 8.5-50.8-17.7-54.6L382 150.2 316.7 17.8c-11.7-23.6-45.6-23.9-57.4 0z"></path></svg>
+                </a>
+            </div>
+            <div class="hebergement">
+                <a class="hebergement__lien" href="">
+                    <img class="hebergement__image" src="images/hebergements/4_small/reisetopia-B8WIgxA_PFU-unsplash.jpg" alt="Hotel des mouettes">
+                    <div class="hebergement__desciptif">
+                        <h2 class="hebergement__titre">Hôtel Les mouettes</h2>
+                        <p class="hebergement__nuit">Nuit à partir de 76<span class="hebergement__prix">€</span></p>
+                        <div class="hebergement__etoiles">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="far fa-star"></i>
+                        </div>
                     </div>
-                </div>
-            </a>
-        </div>
-        <div class="hebergement">
-            <a class="hebergement__lien" href="#">
-                <img class="hebergement__image" src="images/hebergements/4_small/annie-spratt-Eg1qcIitAuA-unsplash.jpg" alt="Hotel de la mer">
-                <div class="hebergement__desciptif">
-                    <h2 class="hebergement__titre">Auberge la Cannebière</h2>
-                    <p class="hebergement__nuit">Nuit à partir de <span class="hebergement__prix">25€</span></p>
-                    <div class="hebergement__etoiles">
-                        <svg class="svg__etoile" aria-hidden="true" focusable="false" data-prefix="fas" data-icon="star" class="svg-inline--fa fa-star fa-w-18" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512"><path class="etoilepleine" fill="currentColor" d="M259.3 17.8L194 150.2 47.9 171.5c-26.2 3.8-36.7 36.1-17.7 54.6l105.7 103-25 145.5c-4.5 26.3 23.2 46 46.4 33.7L288 439.6l130.7 68.7c23.2 12.2 50.9-7.4 46.4-33.7l-25-145.5 105.7-103c19-18.5 8.5-50.8-17.7-54.6L382 150.2 316.7 17.8c-11.7-23.6-45.6-23.9-57.4 0z"></path></svg>
-                        <svg class="svg__etoile" aria-hidden="true" focusable="false" data-prefix="fas" data-icon="star" class="svg-inline--fa fa-star fa-w-18" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512"><path class="etoilepleine" fill="currentColor" d="M259.3 17.8L194 150.2 47.9 171.5c-26.2 3.8-36.7 36.1-17.7 54.6l105.7 103-25 145.5c-4.5 26.3 23.2 46 46.4 33.7L288 439.6l130.7 68.7c23.2 12.2 50.9-7.4 46.4-33.7l-25-145.5 105.7-103c19-18.5 8.5-50.8-17.7-54.6L382 150.2 316.7 17.8c-11.7-23.6-45.6-23.9-57.4 0z"></path></svg>
-                        <svg class="svg__etoile" aria-hidden="true" focusable="false" data-prefix="fas" data-icon="star" class="svg-inline--fa fa-star fa-w-18" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512"><path class="etoilepleine" fill="currentColor" d="M259.3 17.8L194 150.2 47.9 171.5c-26.2 3.8-36.7 36.1-17.7 54.6l105.7 103-25 145.5c-4.5 26.3 23.2 46 46.4 33.7L288 439.6l130.7 68.7c23.2 12.2 50.9-7.4 46.4-33.7l-25-145.5 105.7-103c19-18.5 8.5-50.8-17.7-54.6L382 150.2 316.7 17.8c-11.7-23.6-45.6-23.9-57.4 0z"></path></svg>
-                        <svg class="svg__etoile" aria-hidden="true" focusable="false" data-prefix="fas" data-icon="star" class="svg-inline--fa fa-star fa-w-18" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512"><path class="etoilepleine" fill="currentColor" d="M259.3 17.8L194 150.2 47.9 171.5c-26.2 3.8-36.7 36.1-17.7 54.6l105.7 103-25 145.5c-4.5 26.3 23.2 46 46.4 33.7L288 439.6l130.7 68.7c23.2 12.2 50.9-7.4 46.4-33.7l-25-145.5 105.7-103c19-18.5 8.5-50.8-17.7-54.6L382 150.2 316.7 17.8c-11.7-23.6-45.6-23.9-57.4 0z"></path></svg>
-                        <svg class="svg__etoile" aria-hidden="true" focusable="false" data-prefix="fas" data-icon="star" class="svg-inline--fa fa-star fa-w-18" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512"><path class="etoilepleine" fill="currentColor" d="M259.3 17.8L194 150.2 47.9 171.5c-26.2 3.8-36.7 36.1-17.7 54.6l105.7 103-25 145.5c-4.5 26.3 23.2 46 46.4 33.7L288 439.6l130.7 68.7c23.2 12.2 50.9-7.4 46.4-33.7l-25-145.5 105.7-103c19-18.5 8.5-50.8-17.7-54.6L382 150.2 316.7 17.8c-11.7-23.6-45.6-23.9-57.4 0z"></path></svg>
+                </a>
+            </div>
+            <div class="hebergement">
+                <a class="hebergement__lien" href="">
+                    <img class="hebergement__image" src="images/hebergements/4_small/annie-spratt-Eg1qcIitAuA-unsplash.jpg" alt="Hotel de la mer">
+                    <div class="hebergement__desciptif">
+                        <h2 class="hebergement__titre">Hôtel de la mer</h2>
+                        <p class="hebergement__nuit">Nuit à partir de 46<span class="hebergement__prix">€</span></p>
+                        <div class="hebergement__etoiles">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="far fa-star"></i>
+                            <i class="far fa-star"></i>
+                        </div>
                     </div>
-                </div>
-            </a>
-        </div>
-        <div class="hebergement">
-            <a class="hebergement__lien" href="#">
-                <img class="hebergement__image" src="images/hebergements/4_small/nicate-lee-kT-ZyaiwBe0-unsplash.jpg" alt="Auberge le pannier">
-                <div class="hebergement__desciptif">
-                    <h2 class="hebergement__titre">Auberge la Cannebière</h2>
-                    <p class="hebergement__nuit">Nuit à partir de <span class="hebergement__prix">25€</span></p>
-                    <div class="hebergement__etoiles">
-                        <svg class="svg__etoile" aria-hidden="true" focusable="false" data-prefix="fas" data-icon="star" class="svg-inline--fa fa-star fa-w-18" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512"><path class="etoilepleine" fill="currentColor" d="M259.3 17.8L194 150.2 47.9 171.5c-26.2 3.8-36.7 36.1-17.7 54.6l105.7 103-25 145.5c-4.5 26.3 23.2 46 46.4 33.7L288 439.6l130.7 68.7c23.2 12.2 50.9-7.4 46.4-33.7l-25-145.5 105.7-103c19-18.5 8.5-50.8-17.7-54.6L382 150.2 316.7 17.8c-11.7-23.6-45.6-23.9-57.4 0z"></path></svg>
-                        <svg class="svg__etoile" aria-hidden="true" focusable="false" data-prefix="fas" data-icon="star" class="svg-inline--fa fa-star fa-w-18" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512"><path class="etoilepleine" fill="currentColor" d="M259.3 17.8L194 150.2 47.9 171.5c-26.2 3.8-36.7 36.1-17.7 54.6l105.7 103-25 145.5c-4.5 26.3 23.2 46 46.4 33.7L288 439.6l130.7 68.7c23.2 12.2 50.9-7.4 46.4-33.7l-25-145.5 105.7-103c19-18.5 8.5-50.8-17.7-54.6L382 150.2 316.7 17.8c-11.7-23.6-45.6-23.9-57.4 0z"></path></svg>
-                        <svg class="svg__etoile" aria-hidden="true" focusable="false" data-prefix="fas" data-icon="star" class="svg-inline--fa fa-star fa-w-18" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512"><path class="etoilepleine" fill="currentColor" d="M259.3 17.8L194 150.2 47.9 171.5c-26.2 3.8-36.7 36.1-17.7 54.6l105.7 103-25 145.5c-4.5 26.3 23.2 46 46.4 33.7L288 439.6l130.7 68.7c23.2 12.2 50.9-7.4 46.4-33.7l-25-145.5 105.7-103c19-18.5 8.5-50.8-17.7-54.6L382 150.2 316.7 17.8c-11.7-23.6-45.6-23.9-57.4 0z"></path></svg>
-                        <svg class="svg__etoile" aria-hidden="true" focusable="false" data-prefix="fas" data-icon="star" class="svg-inline--fa fa-star fa-w-18" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512"><path class="etoilepleine" fill="currentColor" d="M259.3 17.8L194 150.2 47.9 171.5c-26.2 3.8-36.7 36.1-17.7 54.6l105.7 103-25 145.5c-4.5 26.3 23.2 46 46.4 33.7L288 439.6l130.7 68.7c23.2 12.2 50.9-7.4 46.4-33.7l-25-145.5 105.7-103c19-18.5 8.5-50.8-17.7-54.6L382 150.2 316.7 17.8c-11.7-23.6-45.6-23.9-57.4 0z"></path></svg>
-                        <svg class="svg__etoile" aria-hidden="true" focusable="false" data-prefix="fas" data-icon="star" class="svg-inline--fa fa-star fa-w-18" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512"><path class="etoilepleine" fill="currentColor" d="M259.3 17.8L194 150.2 47.9 171.5c-26.2 3.8-36.7 36.1-17.7 54.6l105.7 103-25 145.5c-4.5 26.3 23.2 46 46.4 33.7L288 439.6l130.7 68.7c23.2 12.2 50.9-7.4 46.4-33.7l-25-145.5 105.7-103c19-18.5 8.5-50.8-17.7-54.6L382 150.2 316.7 17.8c-11.7-23.6-45.6-23.9-57.4 0z"></path></svg>
+                </a>
+            </div>
+            <div class="hebergement">
+                <a class="hebergement__lien" href="">
+                    <img class="hebergement__image" src="images/hebergements/4_small/nicate-lee-kT-ZyaiwBe0-unsplash.jpg" alt="Auberge le pannier">
+                    <div class="hebergement__desciptif">
+                        <h2 class="hebergement__titre">Auberge Le Panier</h2>
+                        <p class="hebergement__nuit">Nuit à partir de <span class="hebergement__prix">23€</span></p>
+                        <div class="hebergement__etoiles">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="far fa-star"></i>
+                        </div>
                     </div>
-                </div>
-            </a>
-        </div>
-        <div class="hebergement">
-            <a class="hebergement__lien" href="#">
-                <img class="hebergement__image" src="images/hebergements/4_small/febrian-zakaria-M6S1WvfW68A-unsplash.jpg" alt="Hotel chez Amina">
-                <div class="hebergement__desciptif">
-                    <h2 class="hebergement__titre">Auberge la Cannebière</h2>
-                    <p class="hebergement__nuit">Nuit à partir de <span class="hebergement__prix">25€</span></p>
-                    <div class="hebergement__etoiles">
-                        <svg class="svg__etoile" aria-hidden="true" focusable="false" data-prefix="fas" data-icon="star" class="svg-inline--fa fa-star fa-w-18" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512"><path class="etoilepleine" fill="currentColor" d="M259.3 17.8L194 150.2 47.9 171.5c-26.2 3.8-36.7 36.1-17.7 54.6l105.7 103-25 145.5c-4.5 26.3 23.2 46 46.4 33.7L288 439.6l130.7 68.7c23.2 12.2 50.9-7.4 46.4-33.7l-25-145.5 105.7-103c19-18.5 8.5-50.8-17.7-54.6L382 150.2 316.7 17.8c-11.7-23.6-45.6-23.9-57.4 0z"></path></svg>
-                        <svg class="svg__etoile" aria-hidden="true" focusable="false" data-prefix="fas" data-icon="star" class="svg-inline--fa fa-star fa-w-18" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512"><path class="etoilepleine" fill="currentColor" d="M259.3 17.8L194 150.2 47.9 171.5c-26.2 3.8-36.7 36.1-17.7 54.6l105.7 103-25 145.5c-4.5 26.3 23.2 46 46.4 33.7L288 439.6l130.7 68.7c23.2 12.2 50.9-7.4 46.4-33.7l-25-145.5 105.7-103c19-18.5 8.5-50.8-17.7-54.6L382 150.2 316.7 17.8c-11.7-23.6-45.6-23.9-57.4 0z"></path></svg>
-                        <svg class="svg__etoile" aria-hidden="true" focusable="false" data-prefix="fas" data-icon="star" class="svg-inline--fa fa-star fa-w-18" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512"><path class="etoilepleine" fill="currentColor" d="M259.3 17.8L194 150.2 47.9 171.5c-26.2 3.8-36.7 36.1-17.7 54.6l105.7 103-25 145.5c-4.5 26.3 23.2 46 46.4 33.7L288 439.6l130.7 68.7c23.2 12.2 50.9-7.4 46.4-33.7l-25-145.5 105.7-103c19-18.5 8.5-50.8-17.7-54.6L382 150.2 316.7 17.8c-11.7-23.6-45.6-23.9-57.4 0z"></path></svg>
-                        <svg class="svg__etoile" aria-hidden="true" focusable="false" data-prefix="fas" data-icon="star" class="svg-inline--fa fa-star fa-w-18" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512"><path class="etoilepleine" fill="currentColor" d="M259.3 17.8L194 150.2 47.9 171.5c-26.2 3.8-36.7 36.1-17.7 54.6l105.7 103-25 145.5c-4.5 26.3 23.2 46 46.4 33.7L288 439.6l130.7 68.7c23.2 12.2 50.9-7.4 46.4-33.7l-25-145.5 105.7-103c19-18.5 8.5-50.8-17.7-54.6L382 150.2 316.7 17.8c-11.7-23.6-45.6-23.9-57.4 0z"></path></svg>
-                        <svg class="svg__etoile" aria-hidden="true" focusable="false" data-prefix="fas" data-icon="star" class="svg-inline--fa fa-star fa-w-18" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512"><path class="etoilepleine" fill="currentColor" d="M259.3 17.8L194 150.2 47.9 171.5c-26.2 3.8-36.7 36.1-17.7 54.6l105.7 103-25 145.5c-4.5 26.3 23.2 46 46.4 33.7L288 439.6l130.7 68.7c23.2 12.2 50.9-7.4 46.4-33.7l-25-145.5 105.7-103c19-18.5 8.5-50.8-17.7-54.6L382 150.2 316.7 17.8c-11.7-23.6-45.6-23.9-57.4 0z"></path></svg>
+                </a>
+            </div>
+            <div class="hebergement">
+                <a class="hebergement__lien" href="">
+                    <img class="hebergement__image" src="images/hebergements/4_small/febrian-zakaria-M6S1WvfW68A-unsplash.jpg" alt="Hotel chez Amina">
+                    <div class="hebergement__desciptif">
+                        <h2 class="hebergement__titre">Hôtel chez Amina</h2>
+                        <p class="hebergement__nuit">Nuit à partir de 96<span class="hebergement__prix">€</span></p>
+                        <div class="hebergement__etoiles">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                        </div>
                     </div>
+                </a>
+            </div>
+            </div>
+            <p class="afficherplus">Afficher plus</p>
+        </section>
+        <section id="populaires">
+            <div id="titre_logo_global">
+                <h1 class="titre">Les plus populaires</h1>
+                <i class="fas fa-chart-line"></i>
+            </div>
+                <div id="populaire__global">
+                    <a class="populaire__lien" href="">
+                        <div class="populaire">
+                                <div class="populaire__image"></div>
+                                <div class="populaire__desciptif">
+                                    <h2 class="populaire__titre">Hôtel Le soleil du matin</h2>
+                                    <p class="populaire__nuit">Nuit à partir de 128<span class="hebergement__prix">€</span></p>
+                                    <div class="populaire__etoiles">
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                    </div>
+                                </div>
+                        </div>
+                    </a>
+                    <a class="populaire__lien" href="">
+                        <div class="populaire">
+                            <div class="populaire__image2"></div>
+                            <div class="populaire__desciptif">
+                                <h2 class="populaire__titre">Au coeur de l'eau Chambres d'hôtes</h2>
+                                <p class="populaire__nuit">Nuit à partir de 71<span class="hebergement__prix">€</span></p>
+                                <div class="populaire__etoiles">
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="far fa-star"></i>
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+                    <a class="populaire__lien" href="">
+                        <div class="populaire">
+                            <div class="populaire__image3"></div>
+                            <div class="populaire__desciptif">
+                                <h2 class="populaire__titre">Hôtel Tout bleu et Blanc</h2>
+                                <p class="populaire__nuit">Nuit à partir de 68<span class="hebergement__prix">€</span></p>
+                                <div class="populaire__etoiles">
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="far fa-star"></i>
+                                </div>
+                            </div>
+                        </div>
+                    </a>
                 </div>
-            </a>
-        </div>
-        <p>Afficher plus</p>
-    </section>
-    <section id="populaires">
-        <h1 class="titre">Les plus populaires</h1>
-        <div class="populaire"></div>
-        <div class="populaire"></div>
-        <div class="populaire"></div>
-    </section>
+        </section>
+    </div>
     <section id="activites">
-        <div class="activite"></div>
-        <div class="activite"></div>
-        <div class="activite"></div>
-        <div class="activite"></div>
-        <div class="activite"></div>
-        <div class="activite"></div>
+        <h1>Activités à Marseille</h1>
+        <div id="activite__global">
+            <div class="pattern">
+                <div class="activite1">
+                    <a href="">
+                        <div class="activite__arriereplan"></div>
+                        <div class="activite__banniere">
+                            <h2 class="activite__titre">Vieux Port</h2>
+                        </div>
+                    </a>
+                </div>
+            <div class="pattern2">
+                <div class="activite">
+                    <a href="">
+                        <div class="activite__arriereplan2"></div>
+                        <div class="activite__banniere">
+                            <h2 class="activite__titre">Fort de Pomègues</h2>
+                        </div>
+                    </a>
+                </div>
+                <div class="activite">
+                    <a href="">
+                        <div class="activite__arriereplan3"></div>
+                        <div class="activite__banniere">
+                            <h2 class="activite__titre">Îles du Frioul</h2>
+                        </div>
+                    </a>
+                </div>
+            </div>
+            </div>
+            <div class="pattern">
+                <div class="activite1">
+                    <a href="">
+                        <div class="activite__arriereplan4"></div>
+                        <div class="activite__banniere">
+                            <h2 class="activite__titre">Parc National des Calanques</h2>
+                        </div>
+                    </a>
+                </div>
+                <div class="pattern2">
+                <div class="activite">
+                    <a href="">
+                        <div class="activite__arriereplan5"></div>
+                        <div class="activite__banniere">
+                            <h2 class="activite__titre">Notre-Dame-de-la-Garde</h2>
+                        </div>
+                    </a>
+                </div>
+                <div class="activite">
+                    <a href="">
+                        <div class="activite__arriereplan6"></div>
+                        <div class="activite__banniere">
+                            <h2 class="activite__titre">Parc Longchamp</h2>
+                        </div>
+                    </a>
+                </div>
+            </div>
+            </div>
+        </div>
     </section>
     <footer>
-        <h2 class="soustitre">A propos</h2>
-        <p class="paragraphe">Fonctionnement du site</p>
-        <p class="paragraphe">Conditions générales de vente</p>
-        <p class="paragraphe">Données et confidentialité</p>
-        <h2 class="soustitre">Nos hébergements</h2>
-        <p class="paragraphe">Charte qualité</p>
-        <p class="paragraphe">Soumettre votre hôtel</p>
-        <h2 class="soustitre">Assistance</h2>
-        <p class="paragraphe">Centre d'aide</p>
-        <p class="paragraphe">Nous contacter</p>
+        <div id="apropos">
+            <h2 class="footer__soustitre">A propos</h2>
+            <p class="footer__paragraphe">Fonctionnement du site</p>
+            <p class="footer__paragraphe">Conditions générales de vente</p>
+            <p class="footer__paragraphe">Données et confidentialité</p>
+        </div>
+        <div id="noshebergements">
+            <h2 class="footer__soustitre">Nos hébergements</h2>
+            <p class="footer__paragraphe">Charte qualité</p>
+            <p class="footer__paragraphe">Soumettre votre hôtel</p>
+        </div>
+        <div id="assistance">
+            <h2 class="footer__soustitre">Assistance</h2>
+            <p class="footer__paragraphe">Centre d'aide</p>
+            <p class="footer__paragraphe">Nous contacter</p>
+        </div>
     </footer>
-    
 </body>
 </html>
