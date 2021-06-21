@@ -121,6 +121,10 @@ h1{
 
 /* Style de la barre de recherche */
 
+#recherche{
+    padding: 10px;
+}
+
 #barrerecherche{
     display: flex;
     flex-direction: row;
@@ -454,10 +458,12 @@ footer{
 }
 
 .footer__paragraphe{
+    display: block;
     font-family: "Raleway";
     font-weight: normal;
-    font-size: 15px; 
+    font-size: 15px;
     padding-left: 20px;
+    padding-bottom: 10px;
 }
 
 a {
@@ -564,7 +570,7 @@ a {
 
 /*Disposition des sections "populaires" et "hebergement"*/
 
-#populaire_hebergements_global{
+#footer__paragraphe{
     display: flex;
     flex-direction: column-reverse;
 }
@@ -693,7 +699,7 @@ a {
 
 @media (min-width: 1555px) {
 
-#populaire_hebergements_global{
+#footer__paragraphe{
     flex-direction: row;
 }
 
@@ -720,6 +726,22 @@ width: 348px;
 
 .pattern2{
     padding-left: 20px;
+}
+
+}
+
+@media (min-width: 1600px){
+
+#populaire_hebergements_global{
+    display: flex;
+    flex-direction: row;
+    max-width: 1583px;
+    margin: auto;
+}
+
+#activites{
+    max-width: 1568px;
+    margin: auto;
 }
 
 }
