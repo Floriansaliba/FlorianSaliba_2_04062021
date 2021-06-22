@@ -389,7 +389,7 @@ input:focus{
 }
 
 .activite__arriereplan2{
-    background-image: url(/images/activites/4_small/paul-hermann-QFTrLdQIRhI-unsplash.jpg);
+    background-image: url(images/activites/4_small/paul-hermann-QFTrLdQIRhI-unsplash.jpg);
     background-position: 0px -200px;
     height : 150px;
     width: 355px;
@@ -399,7 +399,7 @@ input:focus{
   
 }
 .activite__arriereplan3{
-    background-image: url(/images/activites/4_small/kevin-hikari-rV_Qd1l-VXg-unsplash.jpg);
+    background-image: url(images/activites/4_small/kevin-hikari-rV_Qd1l-VXg-unsplash.jpg);
     background-size: cover;
     height : 150px;
     width: 355px;
@@ -409,7 +409,7 @@ input:focus{
   
 }
 .activite__arriereplan4{
-    background-image: url(/images/activites/4_small/kilyan-sockalingum-NR8-cBCN3aI-unsplash.jpg);
+    background-image: url(images/activites/4_small/kilyan-sockalingum-NR8-cBCN3aI-unsplash.jpg);
     background-size: cover;
     height : 150px;
     width: 355px;
@@ -420,7 +420,7 @@ input:focus{
 }
 
 .activite__arriereplan5{
-    background-image: url(/images/activites/4_small/florian-wehde-xW9e8gdotxI-unsplash.jpg);
+    background-image: url(images/activites/4_small/florian-wehde-xW9e8gdotxI-unsplash.jpg);
     background-size: cover;
     height : 150px;
     width: 355px;
@@ -431,7 +431,7 @@ input:focus{
 }
 
 .activite__arriereplan6{
-    background-image: url(/images/activites/4_small/lena-paulin-wH2-EJoDcV0-unsplash.jpg);
+    background-image: url(images/activites/4_small/lena-paulin-wH2-EJoDcV0-unsplash.jpg);
     background-size: cover;
     height : 150px;
     width: 355px;
@@ -515,7 +515,7 @@ a {
 }
 
 .populaire__image{
-    background-image: url(/images/hebergements/4_small/emile-guillemot-Bj_rcSC5XfE-unsplash.jpg);
+    background-image: url(images/hebergements/4_small/emile-guillemot-Bj_rcSC5XfE-unsplash.jpg);
     background-size: cover;
     background-position: center;
     overflow: hidden;
@@ -525,7 +525,7 @@ a {
 }
 
 .populaire__image2{
-    background-image: url(/images/hebergements/4_small/aw-creative-VGs8z60yT2c-unsplash.jpg);
+    background-image: url(images/hebergements/4_small/aw-creative-VGs8z60yT2c-unsplash.jpg);
     background-size: cover;
     background-position: center;
     overflow: hidden;
@@ -535,7 +535,7 @@ a {
 }
 
 .populaire__image3{
-    background-image: url(/images/hebergements/4_small/febrian-zakaria-sjvU0THccQA-unsplash.jpg);
+    background-image: url(images/hebergements/4_small/febrian-zakaria-sjvU0THccQA-unsplash.jpg);
     background-size: cover;
     background-position: center;
     overflow: hidden;
