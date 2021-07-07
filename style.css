@@ -1,4 +1,3 @@
-
 body{
     padding: 0px;
     margin: 0px;
@@ -694,7 +693,67 @@ a {
 }
 
 
+
+
 /*Media queries*/
+
+
+
+@media (max-width: 768px) {
+    .populaire{
+        width: 90%;
+    }
+
+    .populaire__image{
+        width: 25%;
+    }
+
+    .populaire__desciptif{
+        width: 75%;
+    }
+
+    .hebergement{
+        width: 90%;
+    }
+
+    .activite1{
+        width: 90%;
+    }
+
+    .activite{
+        width: 90%;
+    }
+
+    .activite__arriereplan{
+        width: 100%;
+    }
+
+    .activite__arriereplan2{
+        width: 100%;
+    }
+
+    .activite__arriereplan3{
+        width: 100%;
+    }
+
+    .activite__arriereplan4{
+        width: 100%;
+    }
+
+    .activite__arriereplan5{
+        width: 100%;
+    }
+
+    .activite__arriereplan6{
+        width: 100%;
+    }
+        
+    
+}
+
+
+
+/*
 
 @media (min-width: 750px) {
 
@@ -826,8 +885,9 @@ a {
     }
 
 }
+*/
 
-@media (min-width: 1023px) {
+@media (min-width: 1024px) {
 
 
 
@@ -852,13 +912,15 @@ a {
         margin-left: 20px;
         margin-right: 20px;
         padding: 20px 5px 20px 20px;
+        background-color: #F2F2F2;
+        border-radius: 15px;
     }
 
     .hebergement__ligne1{
         display: flex;
         flex-direction: row;
         width: 100%;
-        justify-content: space-between;
+        justify-content: space-evenly;
         margin-bottom: 15px;
     }
     
@@ -870,9 +932,9 @@ a {
     }
 
     .hebergement{
-        width: 100%;
+        width: 30%;
         height: 175px;
-        margin-right: 15px;
+        margin-right: 20px;
         box-shadow: 2px 2px 10px 1px #d9d9d9;
 
     }
@@ -938,10 +1000,9 @@ a {
     }
 
     #populaires{
-        width: 300px;
-        margin: 0px;
-        padding: 10px 20px 10px 20px;
-        margin-right: 10px;
+        width: 40%;
+        border-radius: 15px;
+        margin-right: 20px;
     }
 
     #populaire__global{
@@ -949,9 +1010,31 @@ a {
     }
 
     .populaire{
-        width: 250px;
+        display: flex;
+        flex-direction: row;
+        justify-content: flex-start;
+        background-color: white;
+        width: 80%;
         height: 120px;
-        margin-bottom: 20px;
+        border-top-left-radius: 20px;
+        border-bottom-left-radius: 20px;
+        border-top-right-radius: 20px;
+        border-bottom-right-radius: 20px;
+        margin-bottom: 10px;
+        box-shadow: 2px 2px 10px 1px #d9d9d9;
+    }
+
+    .populaire__image{
+        width: 40%;
+
+    }
+
+    .populaire__image2{
+        width: 40%;
+    }
+
+    .populaire__image3{
+        width: 40%;
     }
 
     .populaire__descriptif{
@@ -974,33 +1057,40 @@ a {
     #populaire_hebergements_global{
         display: flex;
         flex-direction: row;
-        justify-content: flex-start;
-        margin-right: 10px;
-        margin-left: 0px;
+        justify-content: space-evenly;
     }
 
     #activite__global{
+        display: flex;
         flex-direction: row;
-        justify-content:space-between;
+        flex-wrap: nowrap;
+        justify-content:center;
         width: 100%;
     }
 
     #activites{
-        padding: 20px 0px 20px 20px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        width: 100%;
     }
     
     .activite{
-        margin: 0px 0px 20px 0px;
         width: 100%;
         overflow: hidden;
     }
-   
+
+    .activite1{
+        width: 45%;
+        height: 340px;
+        overflow: hidden;
+    }
 
     .pattern{
         display: flex;
         flex-direction: row;
         justify-content:space-between;
-        width: 50%;
+        width: 45%;
         margin: 0px;
     }
     
@@ -1039,19 +1129,10 @@ a {
         width: 100%;
         background-position: center;
     }
-    
-
-    .activite1{
-        width: 100%;
-        height: 340px;
-        overflow: hidden;
-        margin: 0px 25px 0px 0px;
-    }
-
-    
 
     .activite__titre{
         font-size: 12px;
+        width: 90%;
     }
 
     .activite__banniere{
@@ -1059,8 +1140,8 @@ a {
     }
 
     .pattern2{
-        width: 100%;
-        margin-right: 20px;
+        width: 45%;
+        margin: auto;
     }
 
     .titre{
@@ -1098,10 +1179,15 @@ a {
         margin-top: 10px;
     }
     
+    .pattern{
+        width: 50%;
+    }
     
 
     
 }
+
+/*
 
 @media (min-width: 1500px) {
     #hebergements{
@@ -1159,3 +1245,5 @@ a {
         margin-right: 20px;
     }
 }
+
+*/
