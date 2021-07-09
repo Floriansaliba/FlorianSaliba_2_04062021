@@ -39,7 +39,6 @@ header{
     justify-content: flex-end;
     flex-wrap: wrap-reverse;
     align-items: center;
-    margin-right: 20px;
 }
 
 
@@ -125,6 +124,14 @@ li:hover{
     padding-left: 10px;
 }
 .paragraphe{
+    font-family: "Raleway";
+    font-weight:normal;
+    font-size: 15px;
+    padding-left: 10px;
+    font-weight: 1000;
+}
+
+.paragraphe__logements{
     font-family: "Raleway";
     font-weight:normal;
     font-size: 15px;
@@ -434,7 +441,8 @@ input:focus{
 .afficherplus{
     font-family: "Raleway";
     font-weight: bold;
-    padding-left: 13.750px;
+    width: 90%;
+    margin: auto;
 }
 
 /* Configuration du style des vignettes activités */
@@ -700,20 +708,99 @@ a {
 
 
 @media (max-width: 768px) {
+
+    #recherche{
+        width: 90%;
+        margin: auto;
+        padding: 10px 0px 10px 0px;
+    }
+
+    .titre{
+        padding-left: 0px;
+    }
+
+    .paragraphe__logements{
+        padding-left: 10px;
+        padding-top: 20px;
+        margin-top: 0px;
+    }
+
+    .paragraphe{
+        padding-left: 0px;
+    }
+
+    #barrerecherche{
+        margin-left: 0px;
+        margin-top: 20px;
+        margin-bottom: 20px;
+    }
+
+    .soustitre{
+        padding-left: 0px;
+    }
+
+    .filtre{
+        margin-left: 0px;
+        margin-bottom: 10px;
+    }
+
+    #info{
+        padding-left: 0px;
+    }
+
+    #titre_logo_global{
+        width: 90%;
+        margin: auto;
+        padding-right: 0px;
+    }
+
+    .populaires__titre{
+        font-size: 20px;
+        font-weight: bold;
+        font-family: "Raleway";
+        color:black;
+        padding-left: 0px;
+    }
+
     .populaire{
         width: 90%;
     }
 
     .populaire__image{
-        width: 25%;
+        width: 60%;
+    }
+
+    .populaire__image2{
+        width: 60%;
+    }
+
+    .populaire__image3{
+        width: 60%;
     }
 
     .populaire__desciptif{
         width: 75%;
     }
 
+    #hebergements{
+        padding-top: 10px;
+    }
+
     .hebergement{
         width: 90%;
+    }
+
+    .hebergements__titre{
+        width: 90%;
+        margin: auto;
+        padding-left: 0px;
+        padding-bottom: 20px;
+    }
+
+    .activites__titre{
+        width: 90%;
+        margin: auto;
+        padding: 20px 0px 10px 0px;
     }
 
     .activite1{
@@ -746,6 +833,19 @@ a {
 
     .activite__arriereplan6{
         width: 100%;
+    }
+
+    #footer__global{
+        width: 90%;
+        margin: auto;
+    }
+
+    .footer__soustitre{
+        padding-left: 0px;
+    }
+
+    .footer__paragraphe{
+        padding-left: 0px; 
     }
         
     
@@ -889,7 +989,40 @@ a {
 
 @media (min-width: 1024px) {
 
+    #barrenavigation{
+        width: 60%;
+    }
 
+    header{
+        display: flex;
+        flex-direction: row;
+        justify-content: flex-end;
+    }
+
+    #inscription{
+        width: 100px;
+    }
+
+    ul{
+        width: 300px;
+    }
+
+    li{
+        border-bottom: none;
+        border-top: none;
+        border-top-color: #F2F2F2;
+    }
+
+    li:hover{
+        border-bottom: none;
+        border-top: solid;
+        border-color: #0065FC;
+    }
+
+    .actif{
+        border-top: solid;
+        border-top-color: #0065FC;
+    }
 
     #logo{
         left: 20px;
@@ -942,6 +1075,15 @@ a {
     h1{
         font-size: 15px;
         font-weight: bolder;
+    }
+
+    .activites__titre{
+            font-size: 20px;
+            font-family: "Raleway";
+            color:black;
+            padding-left: 15px;
+            padding-top: 20px;
+            padding-bottom: 10px;
     }
 
     .afficherplus{
@@ -1072,7 +1214,8 @@ a {
         display: flex;
         flex-direction: column;
         justify-content: center;
-        width: 100%;
+        margin-left: 20px;
+        margin-right: 20px;
     }
     
     .activite{
@@ -1081,9 +1224,10 @@ a {
     }
 
     .activite1{
-        width: 45%;
+        width: 100%;
         height: 340px;
         overflow: hidden;
+        margin-right: 20px;
     }
 
     .pattern{
@@ -1140,8 +1284,12 @@ a {
     }
 
     .pattern2{
-        width: 45%;
-        margin: auto;
+        width: 100%;
+        margin-right: 20px;
+    }
+
+    .pattern3{
+        width: 100%;
     }
 
     .titre{
@@ -1163,7 +1311,7 @@ a {
         font-weight: bold;
         font-family: "Raleway";
         color:black;
-        padding-left: 0px;  
+        padding-left: 20px;  
     }
     
     .activites__titre{
@@ -1181,6 +1329,20 @@ a {
     
     .pattern{
         width: 50%;
+    }
+
+    footer{
+        width: 100%;
+        display: flex;
+        flex-direction: row;
+        justify-content:flex-start;
+    }
+
+    #footer__global{
+        width: 90%;
+        display:flex;
+        flex-direction: row;
+        justify-content: space-between;
     }
     
 
