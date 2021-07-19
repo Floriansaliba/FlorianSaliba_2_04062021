@@ -498,6 +498,7 @@ input:focus{
 .activite__arriereplan2{
     background-image: url(images/activites/4_small/paul-hermann-QFTrLdQIRhI-unsplash.jpg);
     background-position: 0px -200px;
+    background-size: cover;
     height : 150px;
     width: 355px;
     margin: auto;
@@ -1225,5 +1226,23 @@ a {
         display:flex;
         flex-direction: row;
         justify-content: space-between;
+    }
+
+    #loupe{
+        display: none;
+    }
+
+    #search{
+        display: block;
+        font-weight: bold;
+        font-size: 17px;
+    }
+
+    #barrerecherche__partiebleue{
+        width: 125px;
+        border-top-right-radius: 20px;
+        border-bottom-right-radius: 20px;
+        border-top-left-radius: 0px;
+        border-bottom-left-radius: 0px;
     }
 }
